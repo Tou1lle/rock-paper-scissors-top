@@ -85,9 +85,13 @@ function playGame() {
             if (playerScore == 5) {
                 winner.textContent = "Player WINS!";
                 disableButtons();
+                const resetBtn = createResetBtn();
+                resetBtnContainer.appendChild(resetBtn);
             } else if (computerScore == 5) {
                 winner.textContent = "Computer WINS!"
                 disableButtons();
+                const resetBtn = createResetBtn();
+                resetBtnContainer.appendChild(resetBtn);
             }
         });
     });
