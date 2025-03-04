@@ -14,6 +14,7 @@ const scissors = "Scissors";
 
 //take buttons and add them to nodelist
 const buttons = document.querySelectorAll(".btn");
+const resetBtnContainer = document.querySelector("div.reset-btn");
 
 let result = document.querySelector(".result");
 
@@ -90,6 +91,13 @@ function playGame() {
             }
         });
     });
+}
+
+function createResetBtn() {
+    const resetBtn = document.createElement("button");
+    resetBtn.textContent = "?? Reset Game ??";
+    
+    return resetBtn; 
 }
 
 playGame();
